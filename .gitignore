@@ -1,0 +1,21 @@
+# Configuración del editor (VS Code)
+.vscode/
+*.code-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs y cachés
+*.log
+.eslintcache
+
+# Archivos de entorno / Secretos (por si usas APIs en el futuro)
+.env
+*.local
+
+# Carpetas de dependencias (por si agregas herramientas de desarrollo)
+node_modules/
+dist/
+build/

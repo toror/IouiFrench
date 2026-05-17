@@ -1,0 +1,17 @@
+body{
+    background-color:#F5F5F5;   /*WebColor*/
+    color: #2D3748;             /*TextColor*/
+    font-family: sans-serif;      /*TextFont*/
+    line-height: 1.6;              /*LineSpace*/
+}
+main{
+    max-width: 650px;             /*TextContainerWidth*/
+    width: 100%;                  /*WidthAdaptation*/
+    margin: 0 auto;               /*CenterMarginScreen*/
+    padding: 0 20px;              /*GapScreenBorder*/
+footer{
+    max-width: 650px;             /*TextContainerWidth*/
+    width: 100%;                  /*WidthAdaptation*/
+    padding: 0 20px;              /*GapScreenBorder*/
+}
+}
