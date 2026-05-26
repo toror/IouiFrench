@@ -5,91 +5,26 @@
 
 /* ---------------------------------------------------------------------------------- */
 /* BASE CONFIGURATION FOR PC */
-/* Modification in topnav space*/
-.topnav {
-    display: flex;                  /* FlexContainer*/
-    justify-content: space-between; /* TitleRight,LinksLeft */
-    align-items: center;            /* AlignTextVertical */
-    flex-wrap: wrap;                /* AddNewLine */
-    gap: 10px;                      /* SapceBetweenRows */
-    padding: 10px 20px;             /* AddSpace-BordersText */
+
+#logoName{
+    background-color: aqua;
 }
 
-/* Modifaction in topnav h2 text "IouiFrench" */
-.topnav h2 {
-    margin: 0;                      /* CeroMargin */
-    font-size: 24px;                /* NewTextSize */
+nav{
+    background-color:darkgray;
 }
 
-/* Modification in topnav h2 link text "IouiFrench", change color, decoration and cursor */
-.topnav h2 a {
-    color: #2D3748;               /* NewColor */
-    text-decoration: none;          /* RemoveDecorations */
-    cursor: pointer;               /* ChangeCursorStyle */
-    border-radius: 4px;            /* AddRadiousBox */
-    width: 78px;
-    text-align: center;
-    padding: 4px 8px;              /* AddPadding */
-    transition: all 0.3s ease;     /* TransitionIHover */
-}
-
-/* Modification in topnav h2 text "IouiFrench", make it hover*/
-.topnav h2 a:hover {
-    background-color:gold;
-}
-
-/* Modification in topnav-links */
-.topnav .topnav-links{
-    display: flex;                 /* FlexContainer*/
-    justify-content: space-around; /* SameSeparationTexts */
-    gap: 15px;                     /* SpaceBwtweenTexts */
-    align-items: center;           /* AlignTextVertical */
-    font-weight: bold;             /* BoldTextStyle */
-}
-
-/* Modification in topnav-links a */
-.topnav .topnav-links a{
-    color: #2D3748;              /* NewTextColor */
-    text-decoration: none;         /* RemoveDecorations */
-    cursor: pointer;               /* ChangeCursorStyle */
-    border-radius: 4px;            /* AddRadiousBox */
-    width: 78px;
-    text-align: center;
-    padding: 4px 8px;              /* AddPadding */
-    transition: all 0.3s ease;     /* TransitionIHover */
+nav div a{
+    background-color:cyan;
+    padding: 4px 60px;
+    max-width: 30px;
 }
 
 /* ---------------------------------------------------------------------------------- */
 /* BASE CONFIGURATION FOR MOBILE OR SMALL SCREENS */
-/* Modification in topnav-links, into a flex */
-@media (max-width: 480px) {
-    .topnav .topnav-links{
-        display: flex;                 /* FlexContainer*/
-        justify-content: space-around; /* SameSeparationTexts */
-        gap: 5px;                      /* SpaceBwtweenTexts */
-    }
-
-/* Modification topnav-links a texts, color, decorations and cursor */
-    .topnav .topnav-links a{
-        color: #2D3748;              /* NewTextColor */
-        text-align: center;
-        text-decoration: none;         /* RemoveDecorations */
-        padding: 4px 4px;              /* AddPadding */
-        cursor: pointer;               /* ChangeCursorStyle */
-    }
-}
-/* ---------------------------------------------------------------------------------- */
-
-/* Modification in .topnav-links a texts, make it hover*/
-.topnav .topnav-links a:hover{
-    display: flex;                 /* FlexContainer*/
-    justify-content: space-around; /* SameSeparationTexts */
-    gap: 40px;                     /* SpaceBwtweenTexts */
-    background-color: gold;      /* ChangeHoverColor */
-}
 
 /* ---------------------------------------------------------------------------------- */
-/* Modification in body content */
+/* Main modification in body content */
 body{
     max-width: 1200px;
     width: 100%;                   /*WidthAdaptation*/
@@ -104,9 +39,11 @@ body{
 
 /* ---------------------------------------------------------------------------------- */
 /* Modification in footer content */
-footer{
-    max-width: 650px;             /*TextContainerWidth*/
-    width: 100%;                  /*WidthAdaptation*/
-    padding: 0 20px;              /*GapScreenBorder*/
+#information{
+    background-color: cadetblue;
+    font-size: medium;
+    font-family: sans-serif;
+    line-height: 1.6;
+    width: 100%;
 }
 /* ---------------------------------------------------------------------------------- */

@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="French Language Exercises" html 5/>
+    <meta name="keywords" content="french, iouifrench, french language, french excersises, français, langue française, exercices de français"/>
     <title>OuiFrench</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>    
     <main>
-        <!-- Hero Topnav class, name and links -->
-        <div class="topnav">
-            <h2><a href="index.html">IouiFrench</a></h2>
-         <!-- Topnav-links class, only links -->
-            <div class="topnav-links">
+<!-- Header -->
+        <header id="logoName"> 
+            <figure>
+                <img src="Pictures/Logo.png" alt="iouifrench logo" width="256" height="256">
+            </figure>
+            <h1>Iouifrench</h1>
+        </header>
+<!-- Topnav-links class, only links -->
+        <nav>
+            <div id="navLinks">
                 <a href="#">Courses</a>
                 <a href="#">Blog</a>
                 <a href="#">About</a>
             </div>
-        </div>
+        </nav>            
             
-        </section>
+        <section>
            <p>Le Comte de Monte-Cristo est un roman d'Alexandre Dumas, écrit avec la collaboration d'Auguste Maquet et dont
             la publication commence pendant l'été 1844. Il est partiellement inspiré du récit d'un fait divers, « Le Diamant
             et la Vengeance » (voir Pierre Picaud), publié en 1838 dans les Mémoires tirés des archives de la police (tome V,
@@ -35,24 +42,37 @@
             trésor caché dans l'île de Montecristo. Rendu riche et puissant, Dantès se fait passer pour divers personnages, dont le
             comte de Monte-Cristo. Il entreprend de garantir le bonheur et la liberté aux rares qui lui sont restés fidèles et de se
             venger méthodiquement de ceux qui l'ont accusé à tort et fait emprisonner.l'ont accusé à tort et fait emprisonner.</p>
-        </p>
-
-        <!-- Lessons -->
-        <section id="lessons">
-            <h2>Our Lessons</h2>
-            <article>
-                <h3>Beginner(A1)</h3>
-                <p>Fundamentals, common verbs and everyday vocabulary.</p>
-                <button>View Lessons</button>
-            </article>
-            <article>
-                <h3>Intermediate Level(B1-B2)</h3>
-                <p>Complex structures and fluid conversation.</p>
-                <button>View Lessons</button>
-            </article>
+            </p>
         </section>
 
-        <!-- Extra  -->
+<!-- Lessons -->
+        <aside id="lessons">
+            <article>
+                <header>
+                    <hgroup>
+                        <h2>Our Lessons</h2>
+                        <h3>Beginner(A1)</h3>
+                        <p>Fundamentals, common verbs and everyday vocabulary.</p>
+                    </hgroup>
+                </header>
+                
+                <footer>
+                    <button>View Lessons</button>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Intermediate Level(B1-B2)</h3>
+                </header>
+                <p>Complex structures and fluid conversation.</p>
+                <footer>
+                    <button>View Lessons</button>
+                </footer>
+            </article>
+        </aside>
+
+<!-- Extra  -->
         <aside id="resourses">
             <h2>Free Resources</h2>
             <ul>
@@ -61,18 +81,11 @@
                 <li>Listening Practice Podcast</li>
             </ul>
         </aside>
-
-         <!-- Conctact  -->
-           <aside id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li>#####</li>
-            </ul>
-        </aside>
     </main>
 
-    <!-- Footer -->
-    <footer>
+ <!-- Footer  -->   
+    <footer id="information">
+        <address>Ines Telegram: 9</address>
         <p>&copy; 2026OuiFrench. All right reserved.</p>
     </footer>
 
