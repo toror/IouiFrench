@@ -14,10 +14,22 @@ nav{
     background-color:darkgray;
 }
 
+#navLinks {
+    display: flex;         
+    justify-content: center; 
+    gap: 10px;
+}
+
 nav div a{
-    background-color:cyan;
+    text-decoration: none;
+    text-align: center;
+    color: #2D3748;  
     padding: 4px 60px;
-    max-width: 30px;
+    width: 150px;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    background-color:gold;
 }
 
 /* ---------------------------------------------------------------------------------- */
