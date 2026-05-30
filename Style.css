@@ -3,58 +3,93 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: 'usedFont';
+    src:url('micross.ttf');
+}
 /* ---------------------------------------------------------------------------------- */
-/* BASE CONFIGURATION FOR PC */
-
-#logoName{
-    background-color: aqua;
+header{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color:#ebebeb;
 }
 
-nav{
-    background-color:darkgray;
+header h1 {
+    margin: 0;
+}
+
+header h1 a{
+    /* CONTAINER PROPERTIES*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2D3748;
+
+    /* BOX PROPERTIES*/
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: all 0.3s ease; 
 }
 
 #navLinks {
-    display: flex;         
-    justify-content: center; 
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
 }
 
-nav div a{
+header nav div a{
+    /* CONTAINER PROPERTIES*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    text-align: center;
-    color: #2D3748;  
-    padding: 4px 60px;
-    width: 150px;
-    border-radius: 4px;
+
+    /* TEXT PROPERTIES */
+    color: #2D3748;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* BOX PROPERTIES*/
+    width: 70px;
+    height: 40px;
+    border-radius: 8px;
     cursor:pointer;
-    transition: all 0.3s ease;
-    background-color:gold;
+    transition: all 0.3s ease; 
+}
+/* ---------------------------------------------------------------------------------- */
+header h1 a:hover{
+    transform: scale(1.05);
 }
 
+header nav div a:hover{
+    background-color:gold;
+    color:darkblue;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 /* ---------------------------------------------------------------------------------- */
-/* BASE CONFIGURATION FOR MOBILE OR SMALL SCREENS */
-
-/* ---------------------------------------------------------------------------------- */
-/* Main modification in body content */
 body{
     max-width: 1200px;
-    width: 100%;                   /*WidthAdaptation*/
-    margin: 0 auto;                /*CenterMarginScreen*/
-    padding: 20px 10px;            /* GapScreenBorder */
-    background-color:#F5F5F5;    /*WebColor*/
-    color: #2D3748;              /*TextColor*/
-    font-family: sans-serif;       /*TextFont*/
-    line-height: 1.6;              /*LineSpace*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color:#F5F5F5;    
+    color: #2D3748;
+    font-family: 'usedFont';
+    line-height: 1.6;
     text-align: justify;
 }
-
 /* ---------------------------------------------------------------------------------- */
-/* Modification in footer content */
 #information{
     background-color: cadetblue;
     font-size: medium;
-    font-family: sans-serif;
+    font-family: 'usedFont';
     line-height: 1.6;
     width: 100%;
 }
