@@ -11,11 +11,11 @@
 header{
     display: flex;
     flex-direction: column;
-    /*flex-direction: row;*/
-    /*align-items: center;*/
     justify-content: space-between;
     padding: 10px 20px;
     background-color:#ebebeb;
+    border-radius: 20px;
+    border: 5px solid #e0e0e0;
 }
 
 header h1 {
@@ -35,7 +35,7 @@ header h1 a{
     height: 40px;
     border-radius: 8px;
     cursor:pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 #navLinks {
@@ -61,7 +61,7 @@ header nav div a{
     height: 40px;
     border-radius: 8px;
     cursor:pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 /* ---------------------------------------------------------------------------------- */
 header h1 a:hover{
@@ -75,12 +75,72 @@ header nav div a:hover{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 /* ---------------------------------------------------------------------------------- */
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 5px;
+}
+
+aside {
+    flex: 0 0 150px;
+    background-color:#ebebeb;
+    border-radius: 20px;
+    border: 5px solid #e0e0e0;
+    padding: 5px;
+    text-decoration: none;
+}
+
+aside h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+}
+
+aside a { 
+    text-decoration: none;
+    color: #2D3748;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    flex: 1;
+}
+
+article{
+    border-radius: 20px;
+    background-color:#ebebeb;
+    border: 5px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 10px;
-    background-color:#F5F5F5;    
+    background-color:#F5F5F5;
     color: #2D3748;
     font-family: 'usedFont';
     line-height: 1.6;
