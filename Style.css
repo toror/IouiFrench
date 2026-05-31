@@ -85,10 +85,13 @@ header nav div a:hover{
 
 aside {
     flex: 0 0 150px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
     background-color:#ebebeb;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 5px solid #e0e0e0;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -108,27 +111,62 @@ aside a {
 aside ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    text-align: left;
 }
 
 section {
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
-article{
-    border-radius: 20px;
-    background-color:#ebebeb;
-    border: 5px solid #e0e0e0;
-    padding: 15px;
-    margin-bottom: 10px;
+.a1level{
+    border-radius: 10px;
+    background-color:#137DC9;
+    color: #F5F5F5;
+    padding: 5px;
 }
 
+.b1level{
+    border-radius: 10px;
+    background-color:#F06210;
+    color: #F5F5F5;
+    padding: 5px;
+}
 
+.c1level{
+    border-radius: 10px;
+    background-color:#445C7E;
+    color: #F5F5F5;
+    padding: 5px;
+}
 
+.a2level{
+    border-radius: 10px;
+    background-color:#1A4771;
+    color: #F5F5F5;
+    padding: 5px;
+}
 
+.b2level{
+    border-radius: 10px;
+    background-color:#EC501D;
+    color: #F5F5F5;
+    padding: 5px;
+}
 
-
-
-
+.c2level{
+    border-radius: 10px;
+    background-color:#0F2F62;
+    color: #F5F5F5;
+    padding: 5px;
+}
 
 
 
