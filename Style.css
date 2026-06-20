@@ -7,7 +7,7 @@
     font-family: 'usedFont';
     src:url('micross.ttf');
 }
-/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- */
 header{
     display: flex;
     flex-direction: column;
@@ -23,14 +23,11 @@ header h1 {
 }
 
 header h1 a{
-    /* CONTAINER PROPERTIES*/
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #2D3748;
-
-    /* BOX PROPERTIES*/
     width: 160px;
     height: 40px;
     border-radius: 8px;
@@ -38,32 +35,7 @@ header h1 a{
     transition: all 0.3s ease;
 }
 
-#navLinks {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-}
-
-header nav div a{
-    /* CONTAINER PROPERTIES*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-    /* TEXT PROPERTIES */
-    color: #2D3748;
-    font-size: 16px;
-    font-weight: bold;
-
-    /* BOX PROPERTIES*/
-    width: 70px;
-    height: 40px;
-    border-radius: 8px;
-    cursor:pointer;
-    transition: all 0.3s ease;
-}
-/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- */
 header h1 a:hover{
     transform: scale(1.05);
 }
@@ -74,100 +46,8 @@ header nav div a:hover{
     transform: scale(1.05) translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- */
 
-.container {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px 0px;
-    gap: 5px;
-}
-
-aside {
-    flex: 0 0 100px;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    background-color:#ebebeb;
-    border-radius: 20px;
-    border: 5px solid #e0e0e0;
-    padding: 10px;
-    text-decoration: none;
-}
-
-aside h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0;
-}
-
-aside a { 
-    text-decoration: none;
-    color: #2D3748;
-}
-
-aside ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    text-align: left;
-}
-
-section {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-}
-
-.a1level {
-    border-radius: 20px;
-    background-color:#137DC9;
-    color: #F5F5F5;
-    padding: 5px;
-}
-
-.b1level {
-    border-radius: 20px;
-    background-color:#F06210;
-    color: #F5F5F5;
-    padding: 5px;
-}
-
-.c1level {
-    border-radius: 20px;
-    background-color:#445C7E;
-    color: #F5F5F5;
-    padding: 5px;
-}
-
-.a2level {
-    border-radius: 20px;
-    background-color:#1A4771;
-    color: #F5F5F5;
-    padding: 5px;
-}
-
-.b2level {
-    border-radius: 20px;
-    background-color:#EC501D;
-    color: #F5F5F5;
-    padding: 5px;
-}
-
-.c2level {
-    border-radius: 20px;
-    background-color:#0F2F62;
-    color: #F5F5F5;
-    padding: 5px;
-}
-/* ---------------------------------------------------------------------------------- */
 body {
     max-width: 90%;
     width: 100%;
@@ -179,31 +59,21 @@ body {
     line-height: 1.6;
     text-align: justify;
 }
-/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- */
 .information {
-    background-color: cadetblue;
-    font-size: medium;
-    font-family: 'usedFont';
-    line-height: 1.6;
-    width: 100%;
-}
-
-.information ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex: 1;
+    background-color: #242A3A;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
-    text-align: left;
+    align-items: flex-start;
+    gap: 20px;
+    color: #F5F5F5;
+    border-top: 5px solid #e0e0e0;
 }
 
-.information h3{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding: 0px;
-    margin: 0;
+address {
+    font-style: normal;
+    font-weight: bold;
 }
-/* ---------------------------------------------------------------------------------- */
+   
+/* ---------------------------------------------------- */
