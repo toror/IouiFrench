@@ -54,30 +54,30 @@ header nav div a:hover{
 .student {
     margin-top: 10px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+/* Convertimos el activador en un botón limpio que hereda tus estilos */
+.dropdown-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.17em; /* Tamaño similar al h3 */
+    font-weight: bold;
+    color: #2D3748;
     background-color: #ebebeb;
     border-radius: 20px;
     border: 5px solid #e0e0e0;
-    position: relative;  
     cursor: pointer;
+    font-family: inherit;
 }
 
-.dropdown-trigger {
-    padding: 10px 20px;
-    width: 100%;
-}
-
-.dropdown-trigger h3 {
-    margin: 0;
-}
-
+/* El menú de opciones (Oculto por defecto) */
 .dropdown-menu {
-    display: none;          
+    display: none; /* Sigue oculto al principio */
     position: absolute;
-    top: 100%;              
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: #ffffff;
@@ -87,7 +87,7 @@ header nav div a:hover{
     padding: 0;
     margin: 5px 0 0 0;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    z-index: 10;            
+    z-index: 10;
 }
 
 .dropdown-menu li a {
@@ -95,17 +95,15 @@ header nav div a:hover{
     padding: 12px;
     text-decoration: none;
     color: #2D3748;
-    transition: background 0.2s ease;
 }
-
-.dropdown-menu li:first-child a { border-radius: 10px 10px 0 0; }
-.dropdown-menu li:last-child a { border-radius: 0 0 10px 10px; }
 
 .dropdown-menu li a:hover {
     background-color: #ebebeb;
 }
 
-.student:hover .dropdown-menu {
+/* --- LA CLAVE EN CSS --- */
+/* Cuando JavaScript agregue esta clase al menú, este se volverá visible */
+.dropdown-menu.is-open {
     display: block;
 }
 

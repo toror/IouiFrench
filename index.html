@@ -17,15 +17,27 @@
     </main>
 <section>
     <div class="student">
-        <div class="dropdown-trigger">
-            <h3>Student Details ▾</h3>
-        </div>
+        <button class="dropdown-btn">Student Details ▾</button>
+    
         <ul class="dropdown-menu">
-            <li><a href="#">Grades</a></li>
-            <li><a href="#">Asistance</a></li>
-            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Notas</a></li>
+            <li><a href="#">Asistencia</a></li>
+            <li><a href="#">Horario</a></li>
         </ul>
     </div>
+
+<script>
+    const dropdownBtn = document.querySelector('.dropdown-btn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownBtn.addEventListener('click', () => {
+        // Añade la clase si no existe, y la quita si ya existe
+        dropdownMenu.classList.toggle('is-open');
+    }); // <-- Aquí faltaba el parónimos del cierre del evento '}' y ')'
+</script>
+
+
+
     <div class="Notes">
         <h3>Notes</h3>
     </div>
