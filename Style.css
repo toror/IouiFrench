@@ -10,16 +10,18 @@
 /* ---------------------------------------------------- */
 header{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     padding: 10px 20px;
-    background-color:#ebebeb;
+    background-color: #ebebeb;
     border-radius: 20px;
     border: 5px solid #e0e0e0;
 }
 
 header h1 {
     margin: 0;
+    width: 160px;
 }
 
 header h1 a{
@@ -31,13 +33,15 @@ header h1 a{
     width: 160px;
     height: 40px;
     border-radius: 8px;
-    cursor:pointer;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 /* ---------------------------------------------------- */
 header h1 a:hover{
     transform: scale(1.05);
+    background-color: #2D3748;
+    color: white;
 }
 
 header nav div a:hover{
@@ -46,6 +50,65 @@ header nav div a:hover{
     transform: scale(1.05) translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+/* ---------------------------------------------------- */
+.student {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    border: 5px solid #e0e0e0;
+    position: relative;  
+    cursor: pointer;
+}
+
+.dropdown-trigger {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.dropdown-trigger h3 {
+    margin: 0;
+}
+
+.dropdown-menu {
+    display: none;          
+    position: absolute;
+    top: 100%;              
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;            
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #2D3748;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li:first-child a { border-radius: 10px 10px 0 0; }
+.dropdown-menu li:last-child a { border-radius: 0 0 10px 10px; }
+
+.dropdown-menu li a:hover {
+    background-color: #ebebeb;
+}
+
+.student:hover .dropdown-menu {
+    display: block;
+}
+
 /* ---------------------------------------------------- */
 
 body {
