@@ -120,20 +120,81 @@ body {
     text-align: justify;
 }
 /* ---------------------------------------------------- */
-.information {
-    margin-top: 20px;
-    background-color: #242A3A;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    color: #F5F5F5;
+.information{
+    background-color: #26283B;
+    border-radius: 20px;
 }
 
-address {
-    font-style: normal;
-    font-weight: bold;
+.footer-name{
+    display: flex;
+    color: #ebebeb;
+    margin: 20px;
+    align-content: left;
+    justify-content: left;
+}
+
+.information div h3{
+    color: #ebebeb;
+}
+
+.footer-bottom{
+    display: flex;
+    color: #ebebeb;
+    align-content: center;
+    justify-content: center;
+}
+
+address{
+    display: flex;
+    color: #ebebeb;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ebebeb; 
+    border: 2px solid #2D3748;
+    border-radius: 50%; 
+    color: #2D3748; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.social-btn.facebook:hover {
+    background-color: #1877F2;
+    color: white;
+    border-color: #1877F2;
+}
+
+.social-btn.instagram:hover {
+    background-color: #E1306C; 
+    color: white;
+    border-color: #E1306C;
+}
+
+.footer-contact address {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
 }
    
 /* ---------------------------------------------------- */
