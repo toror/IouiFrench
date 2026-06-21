@@ -51,7 +51,7 @@ header nav div a:hover{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 /* ---------------------------------------------------- */
-.student {
+.dropdown-container {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -59,11 +59,10 @@ header nav div a:hover{
     position: relative;
 }
 
-/* Convertimos el activador en un botón limpio que hereda tus estilos */
 .dropdown-btn {
     width: 100%;
     padding: 10px 20px;
-    font-size: 1.17em; /* Tamaño similar al h3 */
+    font-size: 1.17em;
     font-weight: bold;
     color: #2D3748;
     background-color: #ebebeb;
@@ -73,9 +72,8 @@ header nav div a:hover{
     font-family: inherit;
 }
 
-/* El menú de opciones (Oculto por defecto) */
 .dropdown-menu {
-    display: none; /* Sigue oculto al principio */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -91,7 +89,10 @@ header nav div a:hover{
 }
 
 .dropdown-menu li a {
-    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    display: flex;
     padding: 12px;
     text-decoration: none;
     color: #2D3748;
@@ -101,8 +102,6 @@ header nav div a:hover{
     background-color: #ebebeb;
 }
 
-/* --- LA CLAVE EN CSS --- */
-/* Cuando JavaScript agregue esta clase al menú, este se volverá visible */
 .dropdown-menu.is-open {
     display: block;
 }
@@ -122,6 +121,7 @@ body {
 }
 /* ---------------------------------------------------- */
 .information {
+    margin-top: 20px;
     background-color: #242A3A;
     padding: 20px;
     display: flex;
@@ -129,7 +129,6 @@ body {
     align-items: flex-start;
     gap: 20px;
     color: #F5F5F5;
-    border-top: 5px solid #e0e0e0;
 }
 
 address {
