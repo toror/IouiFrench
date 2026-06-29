@@ -7,7 +7,9 @@
     font-family: 'usedFont';
     src:url('micross.ttf');
 }
-/* ---------------------------------------------------- */
+/* ==========================================
+   1. HEADER SECTION
+   ========================================== */
 header{
     display: flex;
     justify-content: center;
@@ -37,7 +39,9 @@ header h1 a{
     transition: all 0.3s ease;
 }
 
-/* ---------------------------------------------------- */
+/* ==========================================
+   2. HEADER HOVER SECTION
+   ========================================== */
 header h1 a:hover{
     transform: scale(1.05);
     background-color: #2D3748;
@@ -50,7 +54,10 @@ header nav div a:hover{
     transform: scale(1.05) translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-/* ---------------------------------------------------- */
+
+/* ==========================================
+   3. DROPDOWN CONTAINERS 
+   ========================================== */
 .dropdown-container {
     margin-top: 10px;
     display: flex;
@@ -106,7 +113,9 @@ header nav div a:hover{
     display: block;
 }
 
-/* ---------------------------------------------------- */
+/* ==========================================
+   4. GLOBAL STYLE FOR WEBSITE
+   ========================================== */
 
 html, body {
     margin: 0;
@@ -133,7 +142,9 @@ body {
     text-align: justify;
 }
 
-/* ---------------------------------------------------- */
+/* ==========================================
+   5. FOOTER SECTION
+   ========================================== */
 .information{
     background-color: #26283B;
     border-radius: 20px;
@@ -214,4 +225,48 @@ address{
     text-align: center;
 }
    
-/* ---------------------------------------------------- */
+/* ==========================================
+   6. SCHEDULE SECTION
+   ========================================== */
+
+   .calendar-wrapper {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ebebeb;;
+    border: 5px solid #e0e0e0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-wrapper h2 {
+    color: #2D3748;
+    margin-bottom: 5px;
+}
+
+.calendar-wrapper input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#full-calendar {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #2D3748;
+    background-color: #ffffff;
+    border: 2px solid #26283B;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
