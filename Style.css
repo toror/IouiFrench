@@ -148,7 +148,6 @@ body {
 .information{
     background-color: #26283B;
     border-radius: 20px;
-    
 }
 
 .footer-name{
@@ -161,7 +160,6 @@ body {
 
 .information div h3{
     color: #ebebeb;
-    
 }
 
 .footer-bottom{
@@ -269,4 +267,76 @@ address{
     font-family: inherit;
     cursor: pointer;
     outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #26283B;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3b3e5c;
+    transform: translateY(-2px);
+}
+
+.message-field {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.message-field label {
+    display: block;
+    font-size: 0.9rem;
+    color: #2D3748;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.message-field textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid #26283B;
+    border-radius: 10px;
+    font-family: inherit;
+    resize: none; /* Evita que el alumno deforme la caja arrastrando la esquina */
+    box-sizing: border-box;
+    color: #2D3748;
+}
+
+.message-field textarea:focus {
+    outline: none;
+    border-color: #E1306C;
+}
+
+.timezone-notice {
+    font-size: 0.9rem;
+    color: #4A5568; /* Un gris oscuro legible */
+    background-color: #fff3cd; /* Un fondo amarillo muy suave, estilo alerta */
+    border: 1px solid #ffeeba;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Espacio para el icono del planeta */
+.timezone-notice i {
+    margin-right: 5px;
+    color: #634611;
 }

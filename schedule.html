@@ -20,10 +20,37 @@
 
         <section class="calendar-wrapper">
             <h2>My Schedule</h2>
-            
-            <input type="date" id="full-calendar">
+        
+            <p class="timezone-notice">
+                <i class="fa-solid fa-earth-americas"></i> 
+                Important: All times are displayed in <strong>GMT+1</strong>
+            </p>
+
+            <form id="schedule-form" action="https://formspree.io/f/mrewjjgy" method="POST">
+    
+                <input type="date" id="full-calendar" name="date_and_hour">
+                
+                <div class="message-field">
+                    <label for="student-email">Your Email:</label>
+                    <input id="student-email" 
+                        name="email_Student" 
+                        placeholder="example@email.com" 
+                        style="width: 100%; padding: 10px; border: 2px solid #26283B; border-radius: 10px; font-family: inherit; box-sizing: border-box; color: #2D3748; margin-bottom: 15px;"
+                        type="email" 
+                        required 
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                </div>
+
+                <div class="message-field">
+                    <label for="student-message">Message for the class:</label>
+                    <textarea id="student-message" name="message_student" placeholder="Tell me please your name, your level and expectation for the class..." required></textarea>
+                </div>
+        
+            <button type="submit" class="submit-btn">Book Class</button>
+    
+            </form>
         </section>
-    </main>
+</main>
 
     <footer class="information">
         <div class="footer-name">

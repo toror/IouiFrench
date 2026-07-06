@@ -49,6 +49,9 @@ if (calendarInput) {
         defaultDate: "today",  // ¡NUEVO! Selecciona inmediatamente el día actual en el mapa
         minDate: fechaMinima,  // Bloquea los meses anteriores de forma definitiva
         maxDate: fechaMaxima,  // Bloquea todo lo posterior al fin del próximo mes
+        enableTime: true,
+        time_24hr: true,
+        minuteIncrement: 30,
         locale: {
             firstDayOfWeek: 1  // La semana empieza en Lunes
         }
