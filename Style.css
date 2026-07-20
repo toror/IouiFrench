@@ -16,9 +16,9 @@ header{
     text-align: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ebebeb;
-    border-radius: 20px;
-    border: 5px solid #e0e0e0;
+    background-color: #EFF3FE;
+    border-radius: 10px;
+    border: 2px solid #87A6C2;
 }
 
 header h1 {
@@ -44,15 +44,8 @@ header h1 a{
    ========================================== */
 header h1 a:hover{
     transform: scale(1.05);
-    background-color: #2D3748;
-    color: white;
-}
-
-header nav div a:hover{
-    background-color:gold;
-    color:darkblue;
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: #D1DEFE;
+    color: #2D3748;
 }
 
 /* ==========================================
@@ -72,9 +65,9 @@ header nav div a:hover{
     font-size: 1.17em;
     font-weight: bold;
     color: #2D3748;
-    background-color: #ebebeb;
-    border-radius: 20px;
-    border: 5px solid #e0e0e0;
+    background-color: #EFF3FE;
+    border-radius: 10px;
+    border: 2px solid #87A6C2;
     cursor: pointer;
     font-family: inherit;
 }
@@ -85,8 +78,8 @@ header nav div a:hover{
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
-    border: 2px solid #e0e0e0;
+    background-color: #EFF3FE;
+    border: 2px solid #87A6C2;
     border-radius: 12px;
     list-style: none;
     padding: 0;
@@ -102,11 +95,13 @@ header nav div a:hover{
     display: flex;
     padding: 12px;
     text-decoration: none;
-    color: #2D3748;
+    color: #343436;
 }
 
 .dropdown-menu li a:hover {
-    background-color: #ebebeb;
+    background-color: #D1DEFE;
+    border-radius: 10px;
+
 }
 
 .dropdown-menu.is-open {
@@ -135,7 +130,7 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 20px 10px;
-    background-color:#F5F5F5;
+    background: linear-gradient(180deg, #8194FD, #D1DEFE);
     color: #2D3748;
     font-family: 'usedFont';
     line-height: 1.6;
@@ -146,25 +141,25 @@ body {
    5. FOOTER SECTION
    ========================================== */
 .information{
-    background-color: #26283B;
+    background-color: #EFF3FE;
     border-radius: 20px;
+    border: 2px solid #d8d8d8;
 }
 
 .footer-name{
     display: flex;
-    color: #ebebeb;
     margin: 20px;
     justify-content: flex-start; 
     align-items: center;
 }
 
 .information div h3{
-    color: #ebebeb;
+    color: #343436;
 }
 
 .footer-bottom{
     display: flex;
-    color: #ebebeb;
+    color: #343436;
     justify-content: center;
     align-items: center; 
     margin-top: 15px; /
@@ -172,7 +167,7 @@ body {
 
 address{
     display: flex;
-    color: #ebebeb;
+    color: #343436;
     justify-content: center;
     align-items: center;
 }
@@ -191,10 +186,10 @@ address{
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #ebebeb; 
-    border: 2px solid #2D3748;
+    color: #EFF3FE;
+    background: linear-gradient(90deg, #7898D1, #87C4F1);
+    border: 2px solid #EFF3FE;
     border-radius: 50%; 
-    color: #2D3748; 
     font-size: 1.2rem;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -207,13 +202,13 @@ address{
 
 .social-btn.facebook:hover {
     background-color: #1877F2;
-    color: white;
+    color: #EFF3FE;
     border-color: #1877F2;
 }
 
 .social-btn.instagram:hover {
     background-color: #E1306C; 
-    color: white;
+    color: #EFF3FE;
     border-color: #E1306C;
 }
 
@@ -231,8 +226,8 @@ address{
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #ebebeb;;
-    border: 5px solid #e0e0e0;
+    background-color: #e1e6f5;;
+    border: 2px solid #87A6C2;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -276,7 +271,7 @@ address{
     padding: 12px 20px;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #EFF3FE;
     background-color: #26283B;
     border: none;
     border-radius: 10px;
@@ -311,7 +306,7 @@ address{
     border: 2px solid #26283B;
     border-radius: 10px;
     font-family: inherit;
-    resize: none; /* Evita que el alumno deforme la caja arrastrando la esquina */
+    resize: none;
     box-sizing: border-box;
     color: #2D3748;
 }
@@ -323,8 +318,8 @@ address{
 
 .timezone-notice {
     font-size: 0.9rem;
-    color: #4A5568; /* Un gris oscuro legible */
-    background-color: #fff3cd; /* Un fondo amarillo muy suave, estilo alerta */
+    color: #4A5568;
+    background-color: #fff3cd; 
     border: 1px solid #ffeeba;
     padding: 10px 15px;
     border-radius: 8px;
@@ -334,8 +329,6 @@ address{
     text-align: center;
     line-height: 1.4;
 }
-
-/* Espacio para el icono del planeta */
 
 .timezone-notice i {
     margin-right: 5px;
