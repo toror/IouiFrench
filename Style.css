@@ -130,7 +130,8 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 20px 10px;
-    background: linear-gradient(180deg, #8194FD, #D1DEFE);
+    background: linear-gradient(180deg, #8194FD, #D1DEFE) no-repeat;
+    background-attachment: fixed;
     color: #2D3748;
     font-family: 'usedFont';
     line-height: 1.6;
