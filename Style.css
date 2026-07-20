@@ -303,8 +303,8 @@ address{
     width: 100%;
     height: 80px;
     padding: 10px;
-    border: 2px solid #26283B;
-    border-radius: 10px;
+    border: 1px solid #767676;
+    border-radius: 2px;
     font-family: inherit;
     resize: none;
     box-sizing: border-box;
@@ -313,7 +313,8 @@ address{
 
 .message-field textarea:focus {
     outline: none;
-    border-color: #E1306C;
+    border: 2px solid #101010;
+    border-radius: 4px;
 }
 
 .timezone-notice {
